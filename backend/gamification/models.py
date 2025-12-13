@@ -39,7 +39,7 @@ class XPTransaction(models.Model):
     ]
 
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="xp_transactions")
-    amount = models.IntegerField()  # pode ser negativo
+    amount = models.IntegerField()
     source_type = models.CharField(max_length=20, choices=SOURCE_CHOICES, default="MANUAL")
     source_id = models.PositiveIntegerField(null=True, blank=True)
 

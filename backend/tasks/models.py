@@ -6,6 +6,7 @@ from campaigns.models import Campaign, Quest
 
 User = settings.AUTH_USER_MODEL
 
+
 class TaskTemplate(models.Model):
     CATEGORY_CHOICES = [
         ("UI", "UI"),

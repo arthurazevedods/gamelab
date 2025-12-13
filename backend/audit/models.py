@@ -4,9 +4,9 @@ from django.db import models
 User = settings.AUTH_USER_MODEL
 
 class ActivityLog(models.Model):
-    action = models.CharField(max_length=50)  # created_task, moved_column, reviewed, xp_awarded, etc.
+    action = models.CharField(max_length=50)
     actor = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name="activity_logs")
-    entity_type = models.CharField(max_length=50)  # Task, Submission, Review...
+    entity_type = models.CharField(max_length=50)
     entity_id = models.PositiveIntegerField()
     payload = models.JSONField(default=dict, blank=True)
 

@@ -33,9 +33,7 @@ class Quest(models.Model):
     description = models.TextField(blank=True)
 
     scope = models.CharField(max_length=10, choices=SCOPE_CHOICES, default="GLOBAL")
-    # ref_id é o “alvo” do escopo (guild_id ou class_role_id). Por enquanto numérico simples.
-    ref_id = models.PositiveIntegerField(null=True, blank=True)
-
+    ref_id = models.PositiveIntegerField(null=True, blank=True)  # guild_id ou class_role_id
     order = models.PositiveIntegerField(default=0)
 
     def __str__(self) -> str:
