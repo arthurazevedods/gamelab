@@ -82,7 +82,7 @@ export const tasks: Task[] = [
     id: 'task-1', title: 'Pokedex', description: 'Desenvolver uma Pokedex com informações sobre os pokemons e consumo de API',
     boardId: 'board-1', columnId: 'col-1', campaignId: 'camp-1', questId: 'quest-1',
     kind: 'NORMAL', category: 'UI', priority: 'LOW', dueDate: '2024-02-10',
-    estimatedMinutes: 120, assignees: ['user-5'], xpValueDefault: 50,
+    estimatedMinutes: 120, assignees: ['user-3', 'user-4','user-5'], xpValueDefault: 50,
     checklist: [
       { id: 'cl-1', text: 'Achar um vídeo no Youtube sobre a Pokedex', required: true, done: false },
       { id: 'cl-2', text: 'Entender a estrutura da Pokedex', required: true, done: false },
@@ -95,9 +95,9 @@ export const tasks: Task[] = [
   },
   {
     id: 'task-2', title: 'Baixar e Instalar Projeto', description: 'Baixar e instalar o projeto SLZ Aberta (clonar do Github)',
-    boardId: 'board-1', columnId: 'col-1', campaignId: 'camp-1', questId: 'quest-2',
+    boardId: 'board-1', columnId: 'col-1', campaignId: 'camp-2', questId: 'quest-2',
     kind: 'NORMAL', category: 'CODIGO', priority: 'MEDIUM', dueDate: '2024-02-08',
-    estimatedMinutes: 90, assignees: ['user-3', 'user-4'], xpValueDefault: 30,
+    estimatedMinutes: 90, assignees: ['user-6','user-7','user-8'], xpValueDefault: 30,
     checklist: [
       { id: 'cl-4', text: 'Clonar o repositório do Github', required: true, done: false },
       { id: 'cl-5', text: 'Fazer o build do projeto', required: true, done: false },
@@ -166,11 +166,8 @@ export const xpTransactions: XPTransaction[] = [
 
 // Calendar Events
 export const calendarEvents: CalendarEvent[] = [
-  { id: 'evt-1', title: 'Kickoff Sprint Game Jam', startAt: '2024-01-15T10:00:00Z', endAt: '2024-01-15T11:00:00Z', type: 'MILESTONE', campaignId: 'camp-1', scope: 'GLOBAL' },
-  { id: 'evt-2', title: 'Reunião de Arte', startAt: '2024-02-06T14:00:00Z', endAt: '2024-02-06T15:00:00Z', type: 'MEETING', scope: 'GUILD', refId: 'guild-2' },
-  { id: 'evt-3', title: 'Demo Day', startAt: '2024-02-15T18:00:00Z', endAt: '2024-02-15T20:00:00Z', type: 'MILESTONE', campaignId: 'camp-1', scope: 'GLOBAL' },
-  { id: 'evt-4', title: 'Review Sprint', startAt: '2024-02-09T10:00:00Z', endAt: '2024-02-09T11:30:00Z', type: 'MEETING', scope: 'GLOBAL' },
-  { id: 'evt-5', title: 'Deadline Landing Page', startAt: '2024-02-28T23:59:00Z', endAt: '2024-02-28T23:59:00Z', type: 'DEADLINE', campaignId: 'camp-2', questId: 'quest-4', scope: 'GLOBAL' },
+  { id: 'evt-1', title: 'Reunião GitHub', startAt: '2026-01-21T09:30:00Z', endAt: '2026-01-21T11:00:00Z', type: 'MILESTONE', campaignId: 'camp-1', scope: 'GUILD', 'refId': 'guild-1' },
+ 
 ];
 
 // Task Templates
