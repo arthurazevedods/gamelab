@@ -5,6 +5,7 @@ import { TaskCategory, Priority, TaskKind } from '@/lib/types';
 
 interface CreateTaskModalProps {
   onClose: () => void;
+  /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
   onCreate?: (task: any) => void;
 }
 
@@ -206,7 +207,7 @@ export function CreateTaskModal({ onClose, onCreate }: CreateTaskModalProps) {
               </select>
             </div>
             <div>
-              <label className="block text-sm font-medium text-muted-foreground mb-1 flex items-center gap-1">
+              <label className="text-sm font-medium text-muted-foreground mb-1 flex items-center gap-1">
                 <Sparkles className="w-3 h-3 text-primary" /> XP
               </label>
               <input
